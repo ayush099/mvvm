@@ -1,29 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
 
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:hint="UserName"
-        android:inputType="textPersonName" />
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Password"
-        android:inputType="textPassword" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Login" />
+    <data>
 
-</LinearLayout>
+        <variable
+            name="slogin"
+            type="com.hcl.mvvm_tutorial.viewmodel.UserModel" />
+
+        <variable
+            name="userLoginEvent"
+            type="com.hcl.mvvm_tutorial.commands.UserLogin" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".view.MainActivity">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@{slogin.emailHint}"
+            android:text="@={slogin.email}"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@{slogin.passwordHint}"
+            android:text="@={slogin.password}"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:onClick="@{(v)->userLoginEvent.onClickLogin()}"
+            />
+
+    </LinearLayout>
+</layout>
