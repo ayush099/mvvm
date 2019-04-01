@@ -1,9 +1,9 @@
-package com.hcl.mvvm_tutorial.viewmodel;
+package com.hcl.mvvm_tutorial.day_one.viewmodel;
 
 import android.databinding.BaseObservable;
 
 import com.hcl.mvvm_tutorial.R;
-import com.hcl.mvvm_tutorial.model.User;
+import com.hcl.mvvm_tutorial.day_one.model.User;
 
 public class UserModel extends BaseObservable {
 

@@ -1,4 +1,4 @@
-package com.hcl.mvvm_tutorial.commands;
+package com.hcl.mvvm_tutorial.day_one.commands;
 
 public interface UserLogin
 {

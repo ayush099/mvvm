@@ -8,11 +8,11 @@
 
         <variable
             name="slogin"
-            type="com.hcl.mvvm_tutorial.viewmodel.UserModel" />
+            type="com.hcl.mvvm_tutorial.day_one.viewmodel.UserModel" />
 
         <variable
             name="userLoginEvent"
-            type="com.hcl.mvvm_tutorial.commands.UserLogin" />
+            type="com.hcl.mvvm_tutorial.day_one.commands.UserLogin" />
 
     </data>
 
@@ -22,7 +22,7 @@
         android:background="@color/colorPrimary"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".view.MainActivity">
+        tools:context=".day_one.view.MainActivity">
 
         <EditText
             android:id="@+id/etEmail"

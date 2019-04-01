@@ -1,4 +1,4 @@
-package com.hcl.mvvm_tutorial.view;
+package com.hcl.mvvm_tutorial.day_one.view;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.hcl.mvvm_tutorial.R;
-import com.hcl.mvvm_tutorial.commands.UserLogin;
+import com.hcl.mvvm_tutorial.day_one.commands.UserLogin;
 import com.hcl.mvvm_tutorial.databinding.ActivityMainBinding;
-import com.hcl.mvvm_tutorial.model.User;
-import com.hcl.mvvm_tutorial.viewmodel.UserModel;
+import com.hcl.mvvm_tutorial.day_one.model.User;
+import com.hcl.mvvm_tutorial.day_one.viewmodel.UserModel;
 
 public class MainActivity extends AppCompatActivity {
 

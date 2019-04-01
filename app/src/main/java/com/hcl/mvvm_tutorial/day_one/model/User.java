@@ -1,4 +1,4 @@
-package com.hcl.mvvm_tutorial.model;
+package com.hcl.mvvm_tutorial.day_one.model;
 
 public class User {
 
