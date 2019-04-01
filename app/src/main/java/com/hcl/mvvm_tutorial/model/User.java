@@ -12,7 +12,4 @@ public class User {
         this.emailHint = emailHint;
         this.passwordHint = passwordHint;
     }
-
-
-
 }
